@@ -1,7 +1,5 @@
-# dotnet
-**/bin/
-**/obj/
+.vscode/
 
-# other
+dist/
+node_modules/
 README.md
-

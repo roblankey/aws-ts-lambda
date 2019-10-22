@@ -1,0 +1,32 @@
+{
+  "name": "property-handlers",
+  "version": "0.1.0",
+  "description": "lambda handlers for sqs events",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf ./dist function.zip out.txt",
+    "deploy": "awslocal lambda delete-function --function-name hello && awslocal lambda create-function --region us-east-1 --function-name hello --runtime nodejs8.10 --handler index.handler --memory-size 128 --zip-file fileb://function.zip --role arn:aws:iam::123456:role/irrelevant",
+    "invoke": "awslocal lambda invoke --function-name hello out.txt",
+    "package": "zip -j function.zip dist/*",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.rockfin.com:lamp/property-qualifier-handlers.git"
+  },
+  "keywords": [
+    "node",
+    "typescript",
+    "lambda"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {
+    "@types/aws-lambda": "^8.10.33",
+    "@types/node": "^12.11.2",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
+  }
+}
