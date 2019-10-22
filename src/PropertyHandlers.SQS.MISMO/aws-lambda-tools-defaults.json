@@ -15,5 +15,5 @@
   "function-runtime": "dotnetcore2.1",
   "function-memory-size": 256,
   "function-timeout": 30,
-  "function-handler": "PropertyHandlers.SQS::PropertyHandlers.SQS.Function::FunctionHandler"
+  "function-handler": "PropertyHandlers.SQS.MISMO::PropertyHandlers.SQS.MISMO.Function::FunctionHandler"
 }
