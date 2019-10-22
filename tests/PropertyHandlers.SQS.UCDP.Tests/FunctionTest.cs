@@ -7,9 +7,9 @@ using Xunit;
 using Amazon.Lambda.TestUtilities;
 using Amazon.Lambda.SQSEvents;
 
-using PropertyHandlers.SQS;
+using PropertyHandlers.SQS.UCDP;
 
-namespace PropertyHandlers.SQS.Tests
+namespace PropertyHandlers.SQS.UCDP.Tests
 {
     public class FunctionTest
     {
